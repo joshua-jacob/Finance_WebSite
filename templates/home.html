@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" type="text/css", href="{% static 'css/welcome.css' %}"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        body
+        {
+        background-image:url("{% static 'css/bg.png'%}");
+        background-repeat:no-repeat;
+        background-size:100%;
+        }
+        
+        a:link {
+        color: #042c35;
+  
+        }
+
+
+        a:visited {
+        color: #042c35;
+        }
+
+
+        a:hover {
+        color: #042c35;
+  
+        }
+
+
+        a:active {
+        color: #042c35;
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="row">
+        <h2>Choose the Bank Account</h2><br>
+        <div class="col-md-12">
+            <button  type="button"><a style="text-decoration: none" href="{% url 'transactions_pnb' %}">PnB</a></button><br>
+            <button type="button"><a style="text-decoration: none" href="{% url 'transactions_hdfc'%}">HDFC</a></button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

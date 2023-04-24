@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" type="text/css", href="{% static 'css/table.css' %}"/>
+<h1><span class="blue"></span>Transactions<span class="blue"></span> <span class="yellow">Table</span></h1>
+    <h2>Bank: Punjab National Bank</></h2>
+    
+    <table class="container">
+        <thead>
+            <tr>
+                
+                    {% for header in heading %}
+                    <th>{{header}}</th>
+                    {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in form %}
+        <tr>
+            {% for cell in row %}
+             <td>{{cell}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>

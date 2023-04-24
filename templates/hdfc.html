@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" type="text/css", href="{% static 'css/welcome.css' %}"/>
+    <style>
+        body
+        {
+        background-image:url("{% static 'css/bg4.png'%}");
+        background-repeat:no-repeat;
+        background-size:100%;
+        }
+     
+        a:link {
+        color: #042c35;
+  
+        }
+
+
+        a:visited {
+        color: #042c35;
+        }
+
+
+        a:hover {
+        color: #042c35;
+  
+        }
+
+
+        a:active {
+        color: #042c35;
+        }
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="row">
+        <h2>Where To ...</h2><br>
+        <div class="col-md-12">
+            <button  type="button" id="btn1"><a style="text-decoration: none" href="{% url 'table_hdfc' %}">View Transactions</a></button><br>
+            <button type="button" id="btn2"><a style="text-decoration: none" href="{% url 'form_hdfc'%}">Add Transaction</a></button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" type="text/css", href="{% static 'css/welcome.css' %}"/>
+    <style>
+        body
+        {
+        background-image:url("{% static 'css/bg3.png'%}");
+        background-repeat:no-repeat;
+        background-size:100%;
+        }
+       
+        a:link {
+        color: #042c35;
+  
+        }
+
+
+        a:visited {
+        color: #042c35;
+        }
+
+
+        a:hover {
+        color: #042c35;
+  
+        }
+
+
+        a:active {
+        color: #042c35;
+        }
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PnB</title>
+</head>
+<body>
+    <div class="main">
+    <div class="row">
+        <h2>Where To....</h2><br>
+        <div class="col-md-12">
+            <button  type="button"><a style="text-decoration: none" href="{% url 'table_pnb' %}">View Transactions</a></button><br>
+            <button type="button"><a style="text-decoration: none" href="{% url 'form_pnb'%}">Add Transaction</a></button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

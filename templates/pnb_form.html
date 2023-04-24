@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transaction Form</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css", href="{% static 'css/Form.css' %}"/>
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="{% url 'Submit_pnb' %}" method="post">
+          
+        {% csrf_token %}
+        <h1> Transaction Details </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Your Basic Info</legend>
+        
+          <label for="Date">Date:</label>
+          <input type="date" id="name" name="Date">
+        
+          <label for="Description">Description:</label>
+          <input type="text" id="mail" name="Description">
+       
+          <label for="Withdrawal">Withdrawal:</label>
+          <input type="text" id="password" name="Withdrawal">
+        
+          <label for="Deposit">Deposit:</label>
+          <input type="text" id="password" name="Deposit">
+
+          
+        </fieldset>
+        <fieldset>  
+       
+        <button type="submit">SUBMIT</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
